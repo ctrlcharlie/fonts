@@ -1,0 +1,281 @@
+body {
+    margin:0;
+    padding:0;
+/*    background-color: #28ad8a;*/
+    background-color: #ecbb00;
+}
+
+@font-face {
+    font-family: "FOT-RodinBokutoh Pro DB";
+    src: url(FOTRodinBokutohProDB.otf) format("opentype");
+} 
+
+#options ul {
+    margin:0;
+    padding:0;
+}
+#options li {
+    font-size:0.7em;
+    font-weight:600;
+    opacity: 0.4;
+    line-height: 20px;
+    display: inline;
+    padding-right:45px;
+}
+#options li:hover {
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+#main {
+    font-family: "Roboto Slab";
+    /*color:#3c3c3c; */
+    color:rgba(0,0,0,0.7);
+    width:77%;
+    height: 1000px;
+    margin:auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+
+
+
+
+#fontname_div {
+    height:120px;
+}
+#fontname {
+    border-top:1px solid rgba(0,0,0,0.25);
+    padding-top:8px;
+    font-size:1.8em;
+}
+
+
+
+
+
+#glyph_div {
+    display: inline-block;
+    float: left;
+    margin-top:25px;
+    width:260px;
+    height:250px;
+}
+.subheader {
+    border-top:1px solid rgba(0,0,0,0.25);
+    padding-top: 8px;
+    font-size:1em;
+    font-weight: 400;
+}
+#glyph_chars {
+    margin: 0;
+    margin-top:-30px;
+    padding:0;
+    font-size:9em;
+    font-weight:400;
+}
+
+
+
+
+
+#characters_div {
+    display: inline-block;
+    width:810px;
+    height:350px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+#characters {
+    font-size:1.5em;
+    letter-spacing: 4px;
+    line-height: 40px;
+}
+
+
+
+
+
+#designer_div {
+    width:270px;
+    height:200px;
+    margin-top:25px;
+    float:right;
+}
+#designer {
+    font-size:1.15em;
+    margin:0;
+    padding:0;
+    margin-top:20px;
+}
+#role {
+    font-size:0.95em;
+    margin:0;
+    padding:0;
+    font-weight: 200;
+}
+
+#about_div {
+    width:270px;
+    height:500px;
+    margin-top:-190px;
+    float: right;
+}
+#about {
+    margin-top: 25px;
+    font-size: 0.9em;
+    line-height:26px;
+}
+
+
+
+
+
+#styles_div {
+    width:810px;
+    height:350px;
+    margin-left:300px;
+    display: inline-block;
+}
+#styles {
+    line-height: 44px;
+}
+#regular {
+    margin:0;
+    margin-top:28px;
+    padding:0;
+    font-size:1.8em;
+    font-weight:400;
+}
+#italic {
+    margin:0;
+    padding:0;
+    font-size:1.8em;
+    font-style: italic;
+}
+#bold {
+    margin:0;
+    padding:0;
+    font-size:1.8em;
+    font-weight:800;
+}
+#bold-italic {
+    margin:0;
+    padding:0;
+    font-size:1.8em;
+    font-style: italic;
+    font-weight:800;
+}
+
+
+
+
+
+#test_div {
+    height:380px;
+    width:1115px;
+}
+.container {
+    display: inline;
+    padding:5px;
+    margin-right: 25px;
+    margin-left: 45px;
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+    position: relative;
+}
+.radio {
+    margin-left:-10px;
+}
+span::before, span::after {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+span.radio:hover {
+    cursor: pointer;
+}
+span.radio::before {
+    left: -52px;
+    width: 35px;
+    height: 14px;
+    background-color: rgba(0,0,0,0.1);
+}
+span.radio::after {
+    left: -51px;
+    width: 15px;
+    height: 14px;
+    background-color: rgba(0,0,0,0.2);
+    transition: left .25s, background-color .25s;
+}
+input[type="radio"]:checked + label span.radio::after {
+  left: -32px;
+  background-color: #fff;
+}
+#test_div ul {
+    margin:0;
+    padding: 0;
+    margin-top: 45px;
+}
+#test_div li {
+    display: inline;
+    margin: 0;
+    padding:0;
+    background-color: rgba(0,0,0,0.07);
+    padding:10px;
+    margin-right:10px;
+    border-radius: 5px;
+}
+#testtext {
+    font-family: "Roboto Slab";
+    color:rgba(0,0,0,0.7);
+    margin-top: 60px;
+    font-size:6em;
+    background-color: transparent;
+    border:none;
+    padding:5px;
+}
+#testtext:focus {
+    outline:none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0,0,0,0.15);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(0,0,0,0.15);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0,0,0,0.15);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(0,0,0,0.15);
+}
+
+
+
+
+
+#typography_div {
+    height:700px;
+    margin-top:120px;
+}
+#typeset1 {
+    width:500px;
+    
+    margin-top:0px;
+    font-size:11em;
+    font-weight:400;
+    letter-spacing: -12px;
+    line-height: 160px;
+    text-shadow: rgba(0, 0, 0, 0.08) 7px 6px 0px;
+}
+.word1, .word2, .word5, .word8, .word9, .word10 {
+    
+}

@@ -1,0 +1,162 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery.lettering-0.6.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
+</head>
+    
+<body>
+    
+    <script>
+$(document).ready(function() {
+  $("#typeset1").lettering('words');
+});
+</script>
+    
+    <script>
+        function changeToArsenal() {
+            document.getElementById("main").style.fontFamily = "Arsenal";
+            document.getElementById("testtext").style.fontFamily = "Arsenal";
+            document.getElementById("fontname").innerHTML = "Arsenal";
+            document.getElementById("about").innerHTML = "Not the renowned football team, just a fucking font. Not sure why it's even called Arsenal. Typefaces don't have weapons at their desposal, and I'm sure as hell not enjoying having to type 'Arse' every five minutes. Designers and their egos.";
+            document.getElementById("designer").innerHTML = "Some Arsehole";
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = "#28ad8a";
+            document.getElementById("typeset1").innerHTML = "ARISTOCRAT WITHOUT THE PROGRESS";
+            document.getElementById("typeset1").style.fontSize = "12em";
+        }
+        function changeToSlab() {
+            document.getElementById("main").style.fontFamily = "Roboto Slab";
+            document.getElementById("testtext").style.fontFamily = "Roboto Slab";
+            document.getElementById("fontname").innerHTML = "Roboto Slab";
+            document.getElementById("about").innerHTML = "The infamous Roboto, now in Slab form. No, not 'slav', Roboto isn't now wearing an aqua blue tracksuit openly consuming litres of Vodka trying desperately to forget the brutalist stuctures surrounding it.";
+            document.getElementById("designer").innerHTML = "Google Man";
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = "#ecbb00";
+            document.getElementById("typeset1").innerHTML = "I LOVE HOW SHE DANCING GOT ME FEELING FOR YOU";
+        }
+        function changeToSpace() {
+            document.getElementById("main").style.fontFamily = "Space Mono";
+            document.getElementById("testtext").style.fontFamily = "Space Mono";
+            document.getElementById("fontname").innerHTML = "Space Mono";
+            document.getElementById("about").innerHTML = "FUUUUCK MY EYES";
+            document.getElementById("designer").innerHTML = "Colophon";
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = "#ff1d45";
+            document.getElementById("typeset1").innerHTML = "GOTTA MAKE ANOTHER 3 JUST TO MAKE MY QUOTA";
+            document.getElementById("characters").innerHTML = "​‌A​‌B​‌C​‌Ć​‌Č​‌D​‌Đ​‌E​‌F​‌G​‌H​‌I​‌J​‌K​‌L​‌M​‌N​‌O​‌P​‌Q​‌R​‌S​‌Š​‌T​‌U​‌V​‌W​‌X​‌Y​‌Z​‌Ž​‌a​‌b​‌c​‌č​‌ć​‌d​‌đ​‌e​‌f​‌g​‌h​‌i​‌j​‌k​‌l​‌m​‌n​‌o​‌p​‌q​‌r​‌s​‌š​‌t​‌u​‌v​‌w​‌x​‌y​‌z​‌ž​‌Ă​‌Â​‌Ê​‌Ô​‌Ơ​‌Ư​‌ă​‌â​‌ê​‌ô​‌ơ​‌ư​‌1​‌2​‌3​‌4​‌5​‌6​‌7​‌8​‌9​‌0​‌‘​‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&​‌<​‌-​‌+​‌÷​‌×​‌=​‌>​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.​‌*";
+        }
+    </script>
+    
+    
+    
+    
+    <div id="main">
+        
+        <div id="options">
+            <ul>
+                <li id="arsenal" onclick="changeToArsenal()">Arsenal</li>
+                <li id="slab" onclick="changeToSlab()">Roboto Slab</li>
+                <li id="space" onclick="changeToSpace()">Space Mono</li>
+            </ul>
+        </div>
+    
+        <div id="fontname_div">
+            <h1 id="fontname">Roboto Slab</h1>
+        </div>
+        
+        <div id="glyph_div">
+            <h1 class="subheader">Glyph</h1>
+            
+            <h1 id="glyph_chars">Aa</h1>
+        </div>
+        
+        <div id="characters_div">
+            <h1 class="subheader">Characters</h1>
+            
+            <p id="characters">​‌A​‌B​‌C​‌Ć​‌Č​‌D​‌Đ​‌E​‌F​‌G​‌H​‌I​‌J​‌K​‌L​‌M​‌N​‌O​‌P​‌Q​‌R​‌S​‌Š​‌T​‌U​‌V​‌W​‌X​‌Y​‌Z​‌Ž​‌a​‌b​‌c​‌č​‌ć​‌d​‌đ​‌e​‌f​‌g​‌h​‌i​‌j​‌k​‌l​‌m​‌n​‌o​‌p​‌q​‌r​‌s​‌š​‌t​‌u​‌v​‌w​‌x​‌y​‌z​‌ž​‌А​‌Б​‌В​‌Г​‌Ґ​‌Д​‌Ђ​‌Е​‌Ё​‌Є​‌Ж​‌З​‌Ѕ​‌И​‌І​‌Ї​‌Й​‌Ј​‌К​‌Л​‌Љ​‌М​‌Н​‌Њ​‌О​‌П​‌Р​‌С​‌Т​‌Ћ​‌У​‌Ў​‌Ф​‌Х​‌Ц​‌Ч​‌Џ​‌Ш​‌Щ​‌Ъ​‌Ы​‌Ь​‌Э​‌Ю​‌Я​‌а​‌б​‌в​‌г​‌ґ​‌д​‌ђ​‌е​‌ё​‌є​‌ж​‌з​‌ѕ​‌и​‌і​‌ї​‌й​‌ј​‌к​‌л​‌љ​‌м​‌н​‌њ​‌о​‌п​‌р​‌с​‌т​‌ћ​‌у​‌ў​‌ф​‌х​‌ц​‌ч​‌џ​‌ш​‌щ​‌ъ​‌ы​‌ь​‌э​‌ю​‌я​‌Ă​‌Â​‌Ê​‌Ô​‌Ơ​‌Ư​‌ă​‌â​‌ê​‌ô​‌ơ​‌ư​‌1​‌2​‌3​‌4​‌5​‌6​‌7​‌8​‌9​‌0​‌‘​‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&​‌<​‌-​‌+​‌÷​‌×​‌=​‌>​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.​‌*</p>
+        </div>
+        
+        <div id="designer_div">
+            <h1 class="subheader">Designer</h1>
+            
+            <p id="designer">Google Man</p>
+            <p id="role">Lead Designer</p>
+        </div>
+        
+        <div id="styles_div">
+            <h1 class="subheader">Styles</h1>
+            
+            <div id="styles">
+                <h2 id="regular">Regular</h2>
+                <h2 id="italic">Regular Italic</h2>
+                <h2 id="bold">Bold</h2>
+                <h2 id="bold-italic">Bold Italic</h2>
+            </div>
+        </div>
+        
+        <div id="about_div">
+            <h1 class="subheader">About</h1>
+            
+            <p id="about">The infamous Roboto, now in Slab form. No, not 'slav', Roboto isn't now wearing an aqua blue tracksuit openly consuming litres of Vodka trying desperately to forget the brutalist stuctures surrounding it.</p>
+        </div>
+        
+        
+        <div id="test_div">
+            <h1 class="subheader" style="margin-bottom:45px;">Type tester</h1>
+            
+            
+                    <div class="container">
+                        <input type="radio" id="radio-regular" name="group1">
+                        <label for="radio-regular"><span class="radio">Regular</span></label>
+                    </div>
+            
+                
+                    <div class="container">
+                        <input type="radio" id="radio-italic" name="group1">
+                        <label for="radio-italic"><span class="radio">Italic</span></label>
+                    </div>
+                
+                
+                    <div class="container">
+                        <input type="radio" id="radio-bold" name="group1">
+                        <label for="radio-bold"><span class="radio">Bold</span></label>
+                    </div>
+                
+            
+                    <div class="container">
+                        <input type="radio" id="radio-bolditalic" name="group1">
+                        <label for="radio-bolditalic"><span class="radio">Bold Italic</span></label>
+                    </div>
+            
+           
+            
+            <textarea name="previewtext" cols="20" rows="2" id="testtext" placeholder="Click here and type" maxlength="40"></textarea>
+        </div>
+        
+        
+        <div id="typography_div">
+            <h1 class="subheader"></h1>
+            
+            <p id="typeset1">I LOVE HOW SHE DANCING GOT ME FEELING FOR YOU</p>
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>
